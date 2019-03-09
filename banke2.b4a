@@ -1,0 +1,545 @@
+﻿Build1=Default,com.stanks.banke_v2,Full
+File1=1.bal
+File10=bef.jpg
+File11=bgn.jpg
+File12=bks_logo.png
+File13=bsd_logo.png
+File14=cad.jpg
+File15=chf.jpg
+File16=croatia_banka_logo.png
+File17=czk.jpg
+File18=datepicker.bal
+File19=ddk.jpg
+File2=arrow_d.png
+File20=dem.jpg
+File21=dkk.jpg
+File22=erstebank_logo.png
+File23=esp.jpg
+File24=eur.jpg
+File25=fim.jpg
+File26=frf.jpg
+File27=gbp.jpg
+File28=graf.png
+File29=grd.jpg
+File3=arrow_l.png
+File30=hamburger.png
+File31=hkd.jpg
+File32=hnb_logo.png
+File33=hpb_logo.png
+File34=huf.jpg
+File35=hypo_logo.png
+File36=iep.jpg
+File37=imex_logo.png
+File38=itl.jpg
+File39=jadranska_logo.png
+File4=ats.jpg
+File40=jpy.jpg
+File41=karlovacka_logo.png
+File42=kbz_logo.png
+File43=kentbank_logo.png
+File44=left.bal
+File45=luf.jpg
+File46=na.png
+File47=nlg.jpg
+File48=nok.jpg
+File49=otp_logo.png
+File5=aud.jpg
+File50=partner_logo.png
+File51=pbz_logo.png
+File52=pln.jpg
+File53=podravska_logo.png
+File54=primorska_logo.png
+File55=pte.jpg
+File56=rba_logo.png
+File57=ron.jpg
+File58=rsd.jpg
+File59=rub.jpg
+File6=bam.jpg
+File60=samoborska_logo.png
+File61=sberbank_logo.png
+File62=sek.jpg
+File63=sit.jpg
+File64=skk.jpg
+File65=slatinska.png
+File66=sort_asc.png
+File67=sort_desc.png
+File68=splitska_logo.png
+File69=stavka_menija.bal
+File7=banka_kovanica_logo.png
+File70=sted_banka.png
+File71=usd.jpg
+File72=vaba_logo.png
+File73=veneto_logo.png
+File74=zaba_logo.png
+File8=banka1.png
+File9=banke.db
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup36=Default Group
+FileGroup37=Default Group
+FileGroup38=Default Group
+FileGroup39=Default Group
+FileGroup4=Default Group
+FileGroup40=Default Group
+FileGroup41=Default Group
+FileGroup42=Default Group
+FileGroup43=Default Group
+FileGroup44=Default Group
+FileGroup45=Default Group
+FileGroup46=Default Group
+FileGroup47=Default Group
+FileGroup48=Default Group
+FileGroup49=Default Group
+FileGroup5=Default Group
+FileGroup50=Default Group
+FileGroup51=Default Group
+FileGroup52=Default Group
+FileGroup53=Default Group
+FileGroup54=Default Group
+FileGroup55=Default Group
+FileGroup56=Default Group
+FileGroup57=Default Group
+FileGroup58=Default Group
+FileGroup59=Default Group
+FileGroup6=Default Group
+FileGroup60=Default Group
+FileGroup61=Default Group
+FileGroup62=Default Group
+FileGroup63=Default Group
+FileGroup64=Default Group
+FileGroup65=Default Group
+FileGroup66=Default Group
+FileGroup67=Default Group
+FileGroup68=Default Group
+FileGroup69=Default Group
+FileGroup7=Default Group
+FileGroup70=Default Group
+FileGroup71=Default Group
+FileGroup72=Default Group
+FileGroup73=Default Group
+FileGroup74=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+IconFile=
+Library1=core
+Library10=okhttputils2
+Library11=json
+Library12=xmlsax
+Library13=b4xtable
+Library14=xui views
+Library15=ime
+Library16=xcustomlistview
+Library2=appcompat
+Library3=viewsex
+Library4=xui
+Library5=stringutils
+Library6=javaobject
+Library7=dateutils
+Library8=sql
+Library9=runtimepermissions
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="28"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~~\n~CreateResource(values, theme.xml,~\n~<resources>~\n~    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">~\n~        <item name="colorPrimary">#0098FF</item>~\n~        <item name="colorPrimaryDark">#007CF5</item>~\n~        <item name="colorAccent">#AAAA00</item>~\n~        <item name="windowNoTitle">true</item>~\n~        <item name="windowActionBar">false</item>~\n~		<item name="android:windowTranslucentNavigation">false</item>~\n~     	<item name="android:windowTranslucentStatus">true</item>~\n~    </style>~\n~</resources>~\n~)
+Module1=Starter
+Module2=AnotherDatePicker
+Module3=B4XDrawer
+Module4=Xml2Map
+NumberOfFiles=74
+NumberOfLibraries=16
+NumberOfModules=4
+Version=8.8
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Tečaj banaka u HR
+	#VersionCode: 1
+	#VersionName: 1.0
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: True
+#End Region
+
+#Extends: android.support.v7.app.AppCompatActivity
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	Type bnk(imeBanke As String, logoBanke As Bitmap)
+	Private ACToolBarLight1 As ACToolBarLight
+	Private ToolbarHelper As ACActionBar
+	Private Drawer As B4XDrawer
+	Dim xui As XUI
+	Dim idxBanke As Int
+	Dim datumPrimjene As String
+	
+'	Private ListView1 As ListView
+	Private popisBanaka As List = Array As String("HRVATSKA NARODNA BANKA", "BANKA KOVANICA d.d.", "BKS BANK d.d.", "CROATIA BANKA d.d.", "ERSTE & STEIERMÄRKISCHE BANK d.d.", _
+											"IMEX BANKA d.d.", "ISTARSKA KREDITNA BANKA UMAG d.d.", "JADRANSKA BANKA d.d.", "KARLOVAČKA BANKA d.d.", "KENTBANK d.d.", _
+											"KREDITNA BANKA ZAGREB d.d.", "OTP banka HRVATSKA d.d.", "PARTNER banka d.d.", "PODRAVSKA banka d.d.", "PRIVREDNA banka ZAGREB d.d.", _
+											"RAIFFEISENBANK AUSTRIA d.d.", "SAMOBORSKA BANKA d.d.", "SBERBANK d.d.", "SLATINSKA BANKA d.d.", "ŠTEDBANKA d.d.", "VABA d.d. BANKA VARAŽDIN", "VENETO BANKA d.d.", _
+											"ZAGREBAČKA banka d.d.")
+	Private logoiBanaka As List = Array As String("hnb_logo", "banka_kovanica_logo", "bks_logo", "croatia_banka_logo", "erstebank_logo", "imex_logo", "na", "jadranska_logo", _
+										  "karlovacka_logo", "kentbank_logo", "kbz_logo", "otp_logo", "partner_logo", "podravska_logo", _
+										  "pbz_logo", "rba_logo", "samoborska_logo", "sberbank_logo", "slatinska", "sted_banka", "vaba_logo", "veneto_logo", "zaba_logo")
+	Private url_tecaja_banaka As List = Array As String("http://api.hnb.hr/tecajn/v1", "https://www.kovanica.hr/tecajnica", "http://www.bks.hr/BKSWebp/BKS/Application/Rechner/Fixing/HR/Fixing_Devisen.jsp?standPer=", _
+												  "http://www.croatiabanka.hr/hr/tecajna-lista/tecajnaArhiva.aspx?", "http://local.erstebank.hr/alati/SaveAsXML.aspx?ime=TL_", _
+												  "https://www.imexbanka.hr/tecajna-lista/arhiva-tecajne-liste?lista=", "http://www.ikb.hr/Tecartxt/", _
+												  "http://www.jadranska-banka.hr/tecaj/hr/ispisTecaj.asp?", "http://www.kaba.hr/item.php?id=16&id_child=94&date=", _
+												  "http://www.kentbank.hr/195/tecajna-lista", "http://www.kbz.hr/teclis/", _
+												  "https://elementa.otpbanka.hr/gradjani/OTPinvest/uo_tecaj/preuzimanje?lista=", "http://www.paba.hr/default.aspx?id=46", _
+												  "http://www.poba.hr/elementi/tecajna_lista.php", _
+												  "http://www.pbz.hr/Downloads/PBZxml", "https://www.rba.hr/tecajna-lista/arhiva-tecajne-liste?p_p_id=arhivaTecajneListe_WAR_tecajneliste&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=xmlPrikaz&p_p_cacheability=cacheLevelPage&p_p_col_id=_118_INSTANCE_nP1ViwEX3f02__column-exchangelist-g2&p_p_col_count=1&_arhivaTecajneListe_WAR_tecajneliste_action=submit&_arhivaTecajneListe_WAR_tecajneliste_implicitModel=true&datumOd=", _
+												  "http://www.sabank.hr/tecajna.php?datum=", "https://www.sberbank.hr/umbraco/surface/ExchangeRatesSurface/DownloadExchangeRatesCSV?date=", "https://www.slatinska-banka.hr/tec/tecajna.php", "http://www.stedbanka.hr/tecajna-lista/", "http://www.vababanka.hr/tecajna-lista/24", "http://www.venetobanka.hr/TecajnaLista/?lang=hrv", "https://www.zaba.hr/home/tecajna")
+
+	Private clv1 As CustomListView
+	Private imgBanka As ImageView
+	Private imeBanka As Label
+	Private AnotherDatePicker1 As AnotherDatePicker
+	Private pnlZaBankuSakriven As Boolean = True
+	Private btnGraf As Button
+	Private lblImeBanke As Label
+	Private Panel2 As Panel
+	Private btnPrethodni As Button
+	Private btnSlijedeci As Button
+	Private lblStatus As Label
+'	Private Table1 As Table
+	Private B4XTable1 As B4XTable
+	Private xui As XUI
+	Private brojStupca As B4XTableColumn
+	Private IME As IME
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	Drawer.Initialize(Me, "Drawer", Activity, 300dip)
+	IME.Initialize("ime")
+	IME.AddHeightChangedEvent
+	Drawer.CenterPanel.LoadLayout("1")
+
+	ToolbarHelper.Initialize
+	ToolbarHelper.ShowUpIndicator = True 'set to true to show the up arrow
+	Dim bd As BitmapDrawable
+	bd.Initialize(LoadBitmap(File.DirAssets, "hamburger.png"))
+	ToolbarHelper.UpIndicatorDrawable =  bd
+	ACToolBarLight1.InitMenuListener
+	Drawer.LeftPanel.LoadLayout("Left")
+	For i = 0 To popisBanaka.Size - 1
+		clv1.Add(CreateItem(clv1.AsView.Width, popisBanaka.Get(i), LoadBitmap(File.DirAssets, logoiBanaka.Get(i) & ".png")), "")
+	Next
+
+	If Not(Drawer.LeftOpen) Then
+		Drawer.LeftOpen = True
+	End If
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Private Sub CreateItem(Width As Int, n As String, l As Bitmap) As Panel
+	Dim p As B4XView = xui.CreatePanel("")
+	Dim height As Int = 40dip
+	If GetDeviceLayoutValues.ApproximateScreenSize < 4.5 Then height = 70dip
+	p.SetLayoutAnimated(0, 0, 0, Width, height)
+	p.LoadLayout("stavka_menija")
+	
+	imeBanka.Text = n
+	imgBanka.Bitmap = l
+
+	Return p
+End Sub
+
+Sub ACToolBarLight1_NavigationItemClick
+	Drawer.LeftOpen = Not(Drawer.LeftOpen)
+End Sub
+
+Sub Activity_KeyPress (KeyCode As Int) As Boolean
+	If KeyCode = KeyCodes.KEYCODE_BACK And Drawer.LeftOpen Then
+		Drawer.LeftOpen = False
+		If AnotherDatePicker1.CloseAllDialogs Then Return True
+		Return True
+	End If
+	Return False
+End Sub
+
+Sub AnotherDatePicker1_DateChanged (NewDate As Long)
+	Log($"New date $Date{NewDate}"$)
+End Sub
+
+Sub clv1_ItemClick (Index As Int, Value As Object)
+	Log(Index)
+	Log(Value)
+	idxBanke = Index
+	If pnlZaBankuSakriven Then	' false
+		pnlZaBankuSakriven = False
+		Panel2.Visible = True
+		Drawer.LeftOpen = Not(Drawer.LeftOpen)
+	End If
+
+	KreirajViewZaBanku
+End Sub
+
+Sub KreirajViewZaBanku
+	DateTime.DateFormat = "dd.MM.yyyy"
+	AnotherDatePicker1.Date = DateTime.DateParse(DateTime.Date(DateTime.Now))
+
+	DLZaBanku(url_tecaja_banaka.Get(idxBanke))
+End Sub
+
+Sub DLZaBanku(lnk As String)
+'	Dim ff As B4XFormatter
+
+	Dim j As HttpJob
+	j.Initialize("", Me) 'name is empty as it is no longer needed
+	Select idxBanke
+		Case 0	' hnb
+			j.Download(lnk)
+			Wait For (j) JobDone(j As HttpJob)
+			If j.Success Then
+				B4XTable1.Clear
+				B4XTable1.AddColumn("Država", B4XTable1.COLUMN_TYPE_TEXT)
+				B4XTable1.AddColumn("Valuta", B4XTable1.COLUMN_TYPE_TEXT)
+				B4XTable1.AddColumn("Jedinica", B4XTable1.COLUMN_TYPE_NUMBERS)
+'				B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
+				brojStupca = B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
+				CreateCustomFormat(brojStupca)
+'				B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
+				brojStupca = B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
+				CreateCustomFormat(brojStupca)
+'				B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
+				brojStupca = B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
+				CreateCustomFormat(brojStupca)
+				Dim parser As JSONParser
+				parser.Initialize(j.GetString)
+				Dim root As List = parser.NextArray
+				Dim ld As List
+				ld.Initialize
+				For Each colroot As Map In root
+					Dim Država As String = colroot.Get("Država")
+					Dim Srednji_za_devize As String = colroot.Get("Srednji za devize")
+'					Dim Šifra_valute As String = colroot.Get("Šifra valute")
+					Dim Jedinica As String = colroot.Get("Jedinica")
+					Dim Datum_primjene As String = colroot.Get("Datum primjene")
+					datumPrimjene = Datum_primjene
+					Dim Valuta As String = colroot.Get("Valuta")
+					Dim Kupovni_za_devize As String = colroot.Get("Kupovni za devize")
+'					Dim Broj_tečajnice As String = colroot.Get("Broj tečajnice")
+					Dim Prodajni_za_devize As String = colroot.Get("Prodajni za devize")
+					Kupovni_za_devize = Kupovni_za_devize.Replace(",", ".")
+'					Dim kzd As Double = Kupovni_za_devize
+'					ff.Initialize
+'					Dim tc As B4XTableColumn
+'					tc.Formatter = ff
+'					Dim DefaultFormat As B4XFormatData = ff.GetDefaultFormat
+'					DefaultFormat.MaximumFractions = 6
+'					DefaultFormat.MinimumFractions = 2
+'					Dim kzd_s As String = ff.Format(kzd)
+
+					Srednji_za_devize = Srednji_za_devize.Replace(",", ".")
+					Prodajni_za_devize = Prodajni_za_devize.Replace(",", ".")
+					Starter.upit.ExecNonQuery($"INSERT INTO banke VALUES (?, '${Datum_primjene}', '${popisBanaka.get(idxBanke)}' , '${Država}', '${Valuta}', '${Jedinica}', '${Kupovni_za_devize}', '${Srednji_za_devize}', '${Prodajni_za_devize}')"$)
+					ld.Add(Array(Država, Valuta, Jedinica, Kupovni_za_devize, Srednji_za_devize, Prodajni_za_devize))
+				Next
+				B4XTable1.SetData(ld)
+				lblImeBanke.Text = popisBanaka.Get(idxBanke)
+				lblStatus.Text = "Datum primjene: " & datumPrimjene & CRLF & "Izvor: " & popisBanaka.Get(idxBanke)
+			Else
+				ToastMessageShow("Greška kod preuzimanja!", False)
+			End If
+		Case 1	' banka kovanica
+			B4XTable1.Clear
+			B4XTable1.AddColumn("Valuta", B4XTable1.COLUMN_TYPE_TEXT)
+			B4XTable1.AddColumn("Jedinica", B4XTable1.COLUMN_TYPE_NUMBERS)
+'			B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
+'			B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
+'			B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
+			brojStupca = B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
+			CreateCustomFormat(brojStupca)
+'				B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
+			brojStupca = B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
+			CreateCustomFormat(brojStupca)
+'				B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
+			brojStupca = B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
+			'https://www.kovanica.hr/tecajnica/ddmmyyyy.xml
+			DateTime.DateFormat = "ddMMyyyy"
+			Dim dd As String = DateTime.Date(DateTime.Now)
+			lnk = lnk & "/" & dd & ".xml"
+			j.Download(lnk)
+			Wait For (j) JobDone(j As HttpJob)
+			If j.Success Then
+				Dim xm As Xml2Map
+				xm.Initialize
+				Dim ParsedData As Map
+				ParsedData = xm.Parse2(j.GetInputStream)
+				Dim ld As List
+				ld.Initialize
+				Dim tecajnica As Map = ParsedData.Get("Tecajnica")
+				For Each tecaj As Map In GetElements(tecajnica, "Tecaj")
+					Dim Datum_primjene As String = tecaj.Get("DatumTecajne")
+					DateTime.DateFormat = "yyyy-MM-dd"
+					Dim dt As Long = DateTime.DateParse(Datum_primjene)
+					DateTime.DateFormat = "dd.MM.yyyy"
+					datumPrimjene = DateTime.Date(dt)
+					Dim Država As String = ""
+					Dim Valuta As String = tecaj.Get("Valuta")
+					Dim Jedinica As String = tecaj.Get("Jedinica")
+					Dim Kupovni_za_devize As String = tecaj.Get("KupovniDevize")
+					Dim Srednji_za_devize As String = tecaj.Get("Srednji")
+					Dim Prodajni_za_devize As String = tecaj.Get("ProdajniDevize")
+					Kupovni_za_devize = Kupovni_za_devize.Replace(",", ".")
+					Srednji_za_devize = Srednji_za_devize.Replace(",", ".")
+					Prodajni_za_devize = Prodajni_za_devize.Replace(",", ".")
+					Starter.upit.ExecNonQuery($"INSERT INTO banke VALUES (?, '${Datum_primjene}', '${popisBanaka.get(idxBanke)}' , '${Država}', '${Valuta}', '${Jedinica}', '${Kupovni_za_devize}', '${Srednji_za_devize}', '${Prodajni_za_devize}')"$)
+					ld.Add(Array(Valuta, Jedinica, Kupovni_za_devize, Srednji_za_devize, Prodajni_za_devize))
+				Next
+				B4XTable1.SetData(ld)
+				lblImeBanke.Text = popisBanaka.Get(idxBanke)
+				lblStatus.Text = "Datum primjene: " & datumPrimjene & CRLF & "Izvor: " & popisBanaka.Get(idxBanke)
+			Else
+				ToastMessageShow("Greška kod preuzimanja!", False)
+			End If
+	End Select
+
+	If Drawer.LeftOpen Then
+		Drawer.LeftOpen = Not(Drawer.LeftOpen)
+	End If
+	j.Release
+End Sub
+
+Private Sub CreateCustomFormat (c As B4XTableColumn)
+	Dim formatter As B4XFormatter
+	formatter.Initialize
+	c.Formatter = formatter
+	Dim Positive As B4XFormatData = c.Formatter.NewFormatData
+	Positive.MaximumFractions = 6
+	Positive.MinimumFractions = 4
+	Positive.TextColor = B4XTable1.TextColor
+	Positive.FormatFont = xui.CreateDefaultFont(16)
+	c.Formatter.AddFormatData(Positive, 0, c.Formatter.MAX_VALUE, True) 'Inclusive (zero included)
+	Dim Negative As B4XFormatData = c.Formatter.CopyFormatData(Positive)
+	Negative.TextColor = xui.Color_Red
+	Negative.FormatFont = xui.CreateDefaultBoldFont(16)
+	Negative.Prefix = "("
+	Negative.Postfix = ")"
+	c.Formatter.AddFormatData(Negative,c.Formatter.MIN_VALUE, 0, False)
+End Sub
+
+Sub GetElements (m As Map, key As String) As List
+	Dim res As List
+	If m.ContainsKey(key) = False Then
+		res.Initialize
+		Return res
+	Else
+		Dim value As Object = m.Get(key)
+		If value Is List Then Return value
+		res.Initialize
+		res.Add(value)
+		Return res
+	End If
+End Sub
+
+Sub btnGraf_Click
+	
+End Sub
+
+Sub btnPrethodni_Click
+	Dim dt As Long = AnotherDatePicker1.Date
+	DateTime.DateFormat = "dd.MM.yyyy"
+	dt = DateTime.Add(dt, 0, 0, -1)
+	AnotherDatePicker1.Date = DateTime.DateParse(DateTime.Date(dt))
+
+	Select idxBanke
+		Case 0	' hnb
+			'?datum=2014-03-02
+			' dohvati datum iz ADP-a
+			DateTime.DateFormat = "yyyy-MM-dd"
+'			Log(url_tecaja_banaka.Get(idxBanke) & "/?" & DateTime.Date(dt))
+			DLZaBanku(url_tecaja_banaka.Get(idxBanke) & "/?datum=" & DateTime.Date(dt))
+
+		Case 1	' banka kovanica
+			'https://www.kovanica.hr/tecajnica/ddmmyyyy.xml
+			DateTime.DateFormat = "ddMMyyyy"
+			Dim dd As String = DateTime.Date(DateTime.Now)
+'			Log(url_tecaja_banaka.Get(idxBanke) & "/" & dd & ".xml")
+			DLZaBanku(url_tecaja_banaka.Get(idxBanke) & "/" & dd & ".xml")
+
+	End Select
+End Sub
+
+Sub btnSlijedeci_Click
+	Dim dt As Long = AnotherDatePicker1.Date
+	DateTime.DateFormat = "dd.MM.yyyy"
+	dt = DateTime.Add(dt, 0, 0, 1)
+	AnotherDatePicker1.Date = DateTime.DateParse(DateTime.Date(dt))
+
+	Select idxBanke
+		Case 0	' hnb
+			'?datum=2014-03-02
+			' dohvati datum iz ADP-a
+			DateTime.DateFormat = "yyyy-MM-dd"
+'			Log(url_tecaja_banaka.Get(idxBanke) & "/?" & DateTime.Date(dt))
+			DLZaBanku(url_tecaja_banaka.Get(idxBanke) & "/?datum=" & DateTime.Date(dt))
+
+		Case 1	' banka kovanica
+			'https://www.kovanica.hr/tecajnica/ddmmyyyy.xml
+			DateTime.DateFormat = "ddMMyyyy"
+			Dim dd As String = DateTime.Date(DateTime.Now)
+'			Log(url_tecaja_banaka.Get(idxBanke) & "/" & dd & ".xml")
+			DLZaBanku(url_tecaja_banaka.Get(idxBanke) & "/" & dd & ".xml")
+			
+	End Select
+	
+End Sub
+
+Sub IME_HeightChanged (NewHeight As Int, OldHeight As Int)
+	If B4XTable1.IsInitialized Then
+		B4XTable1.mBase.Height = NewHeight - B4XTable1.mBase.Top
+		B4XTable1.Refresh
+	End If
+End Sub
+
+Sub B4XTable1_CellClicked (ColumnId As String, RowId As Long)
+	Dim RowData As Map = B4XTable1.GetRow(RowId)
+	Dim cell As String = RowData.Get(ColumnId)
+	Activity.Title = cell
+End Sub
