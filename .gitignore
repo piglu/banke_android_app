@@ -1,0 +1,7 @@
+#Git will ignore the following files/folders:
+bin/
+gen/
+src/
+*.apk
+*.dex
+*b4a.meta
