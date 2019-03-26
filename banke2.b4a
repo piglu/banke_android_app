@@ -217,7 +217,7 @@ Sub Globals
 	Private logoiBanaka As List = Array As String("hnb_logo", "banka_kovanica_logo", "bks_logo", "croatia_banka_logo", "erstebank_logo", "imex_logo", "na", "jadranska_logo", _
 										  "karlovacka_logo", "kentbank_logo", "kbz_logo", "otp_logo", "partner_logo", "podravska_logo", _
 										  "pbz_logo", "rba_logo", "samoborska_logo", "sberbank_logo", "slatinska", "sted_banka", "vaba_logo", "veneto_logo", "zaba_logo")
-	Private url_tecaja_banaka As List = Array As String("http://api.hnb.hr/tecajn/v1", "https://www.kovanica.hr/tecajnica", "http://www.bks.hr/BKSWebp/BKS/Application/Rechner/Fixing/HR/Fixing_Devisen.jsp?standPer=", _
+	Private url_tecaja_banaka As List = Array As String("http://api.hnb.hr/tecajn/v1", "https://www.kovanica.hr/tecajnica", "https://bks.hr/BKSWebp/BKS/Application/Rechner/Fixing/HR/Fixing_Head.jsp", _
 												  "http://www.croatiabanka.hr/hr/tecajna-lista/tecajnaArhiva.aspx?", "http://local.erstebank.hr/alati/SaveAsXML.aspx?ime=TL_", _
 												  "https://www.imexbanka.hr/tecajna-lista/arhiva-tecajne-liste?lista=", "http://www.ikb.hr/Tecartxt/", _
 												  "http://www.jadranska-banka.hr/tecaj/hr/ispisTecaj.asp?", "http://www.kaba.hr/item.php?id=16&id_child=94&date=", _
@@ -327,8 +327,6 @@ Sub KreirajViewZaBanku
 End Sub
 
 Sub DLZaBanku(lnk As String)
-'	Dim ff As B4XFormatter
-
 	Dim j As HttpJob
 	j.Initialize("", Me) 'name is empty as it is no longer needed
 	Select idxBanke
@@ -340,13 +338,10 @@ Sub DLZaBanku(lnk As String)
 				B4XTable1.AddColumn("Država", B4XTable1.COLUMN_TYPE_TEXT)
 				B4XTable1.AddColumn("Valuta", B4XTable1.COLUMN_TYPE_TEXT)
 				B4XTable1.AddColumn("Jedinica", B4XTable1.COLUMN_TYPE_NUMBERS)
-'				B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
 				brojStupca = B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
 				CreateCustomFormat(brojStupca)
-'				B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
 				brojStupca = B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
 				CreateCustomFormat(brojStupca)
-'				B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
 				brojStupca = B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
 				CreateCustomFormat(brojStupca)
 				Dim parser As JSONParser
@@ -357,24 +352,13 @@ Sub DLZaBanku(lnk As String)
 				For Each colroot As Map In root
 					Dim Država As String = colroot.Get("Država")
 					Dim Srednji_za_devize As String = colroot.Get("Srednji za devize")
-'					Dim Šifra_valute As String = colroot.Get("Šifra valute")
 					Dim Jedinica As String = colroot.Get("Jedinica")
 					Dim Datum_primjene As String = colroot.Get("Datum primjene")
 					datumPrimjene = Datum_primjene
 					Dim Valuta As String = colroot.Get("Valuta")
 					Dim Kupovni_za_devize As String = colroot.Get("Kupovni za devize")
-'					Dim Broj_tečajnice As String = colroot.Get("Broj tečajnice")
 					Dim Prodajni_za_devize As String = colroot.Get("Prodajni za devize")
 					Kupovni_za_devize = Kupovni_za_devize.Replace(",", ".")
-'					Dim kzd As Double = Kupovni_za_devize
-'					ff.Initialize
-'					Dim tc As B4XTableColumn
-'					tc.Formatter = ff
-'					Dim DefaultFormat As B4XFormatData = ff.GetDefaultFormat
-'					DefaultFormat.MaximumFractions = 6
-'					DefaultFormat.MinimumFractions = 2
-'					Dim kzd_s As String = ff.Format(kzd)
-
 					Srednji_za_devize = Srednji_za_devize.Replace(",", ".")
 					Prodajni_za_devize = Prodajni_za_devize.Replace(",", ".")
 					Starter.upit.ExecNonQuery($"INSERT INTO banke VALUES (?, '${Datum_primjene}', '${popisBanaka.get(idxBanke)}' , '${Država}', '${Valuta}', '${Jedinica}', '${Kupovni_za_devize}', '${Srednji_za_devize}', '${Prodajni_za_devize}')"$)
@@ -387,19 +371,6 @@ Sub DLZaBanku(lnk As String)
 				ToastMessageShow("Greška kod preuzimanja!", False)
 			End If
 		Case 1	' banka kovanica
-			B4XTable1.Clear
-			B4XTable1.AddColumn("Valuta", B4XTable1.COLUMN_TYPE_TEXT)
-			B4XTable1.AddColumn("Jedinica", B4XTable1.COLUMN_TYPE_NUMBERS)
-'			B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
-'			B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
-'			B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
-			brojStupca = B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
-			CreateCustomFormat(brojStupca)
-'				B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
-			brojStupca = B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
-			CreateCustomFormat(brojStupca)
-'				B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
-			brojStupca = B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
 			'https://www.kovanica.hr/tecajnica/ddmmyyyy.xml
 			DateTime.DateFormat = "ddMMyyyy"
 			Dim dd As String = DateTime.Date(DateTime.Now)
@@ -407,6 +378,14 @@ Sub DLZaBanku(lnk As String)
 			j.Download(lnk)
 			Wait For (j) JobDone(j As HttpJob)
 			If j.Success Then
+				B4XTable1.Clear
+				B4XTable1.AddColumn("Valuta", B4XTable1.COLUMN_TYPE_TEXT)
+				B4XTable1.AddColumn("Jedinica", B4XTable1.COLUMN_TYPE_NUMBERS)
+				brojStupca = B4XTable1.AddColumn("Kupovni", B4XTable1.COLUMN_TYPE_NUMBERS)
+				CreateCustomFormat(brojStupca)
+				brojStupca = B4XTable1.AddColumn("Srednji", B4XTable1.COLUMN_TYPE_NUMBERS)
+				CreateCustomFormat(brojStupca)
+				brojStupca = B4XTable1.AddColumn("Prodajni", B4XTable1.COLUMN_TYPE_NUMBERS)
 				Dim xm As Xml2Map
 				xm.Initialize
 				Dim ParsedData As Map
@@ -438,6 +417,58 @@ Sub DLZaBanku(lnk As String)
 			Else
 				ToastMessageShow("Greška kod preuzimanja!", False)
 			End If
+		Case 2	' bks
+			DateTime.DateFormat = "dd.MM.yyyy"
+			Dim datum As String = DateUtils.TicksToString(DateTime.Now)
+			Dim datum As String = DateTime.Date(DateTime.Now)
+			' link + 10.07.2015
+			'https://bks.hr/BKSWebp/BKS/Application/Rechner/Fixing/HR/Fixing_Head.jsp?standPer=11.03.2019
+			'https://bks.hr/BKSWebp/BKS/Application/Rechner/Fixing/HR/Fixing_Devisen.jsp?standPer=11.03.2019
+			'http://www.bks.hr/BKSWebp/BKS/Application/Rechner/Fixing/HR/Fixing_Devisen.jsp?standPer=
+			Log(lnk & "?standPer=" & datum)
+			Dim s As String = lnk & "?standPer=" & datum
+			j.Download(s)
+'			j.Download2(lnk, Array As String("standPer", datum))
+			Wait For (j) JobDone(j As HttpJob)
+'			Log(j.GetString)
+			If j.Success Then
+'				If j.GetString.Contains("<p>Za traženi datum ne postoji tečajnica</p>") Or j.GetString.Contains("not found") Then
+'					Msgbox("Nema tečaja za odabrani datum! Odaberite drugi datum!", "Obavijest")
+'					ProgressDialogHide
+'					Return
+'				Else
+'					bks(Job.GetString)
+					Dim matcher1 As Matcher
+					' datum primjene
+					matcher1 = Regex.Matcher($"Primjenjuje se od: ((0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20[0-9]{2}))"$, j.GetString)
+					Do While matcher1.Find = True
+						Datum_primjene = matcher1.Group(1)
+					Loop
+					' valuta
+'					matcher1 = Regex.Matcher($"<td class=" right">([A-Z]+)</td>"$, j.GetString)
+'					Do While matcher1.Find = True
+'						Valuta.Add(matcher1.Group(1))
+'					Loop
+					Dim lSveVrijednosti As List
+					lSveVrijednosti.Initialize
+					' sve vrijednosti
+					matcher1 = Regex.Matcher($"<td class=".*">[-+]?(\b[0-9]*,[0-9]+\b)</td>"$, j.GetString)
+					Do While matcher1.Find = True
+						lSveVrijednosti.Add(matcher1.Group(1))
+					Loop
+					' kupovni
+'					For i = 0 To lSveVrijednosti.Size - 1 Step 5
+'						kupovni.Add(lSveVrijednosti.Get(i))
+'					Next
+'					' prodajni
+'					For i = 2 To lSveVrijednosti.Size - 1 Step 5
+'						prodajni.Add(lSveVrijednosti.Get(i))
+'					Next
+'				End If
+			Else
+				ToastMessageShow("Greška kod preuzimanja!", False)
+			End If
+
 	End Select
 
 	If Drawer.LeftOpen Then
